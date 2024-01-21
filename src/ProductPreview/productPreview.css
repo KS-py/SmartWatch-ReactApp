@@ -1,0 +1,57 @@
+.productPreview{
+    width: 100%;
+    position: relative;
+  }
+  
+  .productPreview > img{
+    width: 100%;
+  }
+  
+  .timeDisplay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    font-weight: 600;
+    z-index: 12;
+    color: white;
+    user-select:  none;
+  }
+  
+  .heartbeatDisplay{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select:  none;    
+  }
+
+  .heart{
+    margin-top: 10px;
+  }
+
+  .number{
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+  }
+ 
+  @keyframes beat{
+    0%, 100%{
+      transform: scale(1, 1);
+    }
+    50%{
+      transform: scale(1.2, 1.2);
+    }
+  }
+   
+
+  .heartbeatDisplay > .heart > img{
+    width: 20px;
+    color: red;
+    animation: beat 1.1s infinite;
+  }
+  

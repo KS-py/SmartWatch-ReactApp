@@ -1,0 +1,9 @@
+  .buyNowBtn{
+    background-color: rgb(79, 167, 79);
+    color: white;
+    margin-top: 40px;
+    border: 0;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 20px;
+  }
